@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg');
+    background-size: cover; /*La imagen se adapta a todo el espacio existente*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+	font-family: 'Lato', sans-serif;
+	margin: 0 0 50px;
+}
+
+h2{
+    text-shadow: 1px 1px 2px rgba(0,0,0,1);
+	color: #fff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.container{
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.7);/* sombra posicion(Horizontal Vertical) parametros opcionales(desenfoque ancho del margen) color*/
+    overflow: hidden; /*Sirve para recorte contenido que se salio de dimenciones*/
+    padding: 15px;
+    width: 320px;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /*Alinia el ttexto en el eje tranversal del div que lo contiene*/
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /*Eliminar puntos de la lista*/
+}
+
+.msg1, .msg2{
+    background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 50px;
+	box-shadow: 0px 15px 5px 0px rgba(0,0,0,0.5);
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.msg1{
+    padding: 15px 20px 15px 70px;
+}
+
+.msg2{
+    align-self: flex-end;
+	padding: 15px 70px 15px 20px;
+}
+
+.logo{
+    border-radius: 50%;
+	box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.7);
+	object-fit: cover;
+	position: absolute;
+	left: 10px;
+	top: -10px;
+	width: 50px;
+	height: 50px;
+}
+
+.msg2 .logo{
+    left: auto;
+	right: 10px;
+}
+
+li p{
+    margin:0;
+}
+
+.Mensaje{
+    font-size: 16px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10px 15px;
+	width: 100%;
+}
+
+footer{
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #3c97bf;
+    text-decoration: none;
+}
